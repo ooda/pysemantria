@@ -1,10 +1,12 @@
-import semantria
+import os
 import uuid
 import time
 
+import semantria
+
 # the consumer key and secret
-consumerKey = ""
-consumerSecret = ""
+consumerKey = os.environ.get("SEMANTRIA_API_KEY")
+consumerSecret = os.environ.get("SEMANTRIA_API_SECRET")
 
 initialTexts = [
 	"Lisa - there's 2 Skinny cow coupons available $5 skinny cow ice cream coupons on special k boxes and Printable FPC from facebook - a teeny tiny cup of ice cream. I printed off 2 (1 from my account and 1 from dh's). I couldn't find them instore and i'm not going to walmart before the 19th. Oh well sounds like i'm not missing much ...lol",
